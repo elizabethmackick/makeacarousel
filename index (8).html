@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Carousel — Get Your Message Around</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmOTczMTYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmJiZjI0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnMiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmOTczMTYiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImczIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIgc3RvcC1vcGFjaXR5PSIwLjIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmJiZjI0IiBzdG9wLW9wYWNpdHk9IjAuMTUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIAogIDwhLS0gRGFyayByb3VuZGVkIGJhY2tncm91bmQgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSI5NiIgZmlsbD0iIzE4MTgxZiIvPgogIAogIDwhLS0gQmFjayBjYXJkIChtb3N0IG9mZnNldCkgLS0+CiAgPHJlY3QgeD0iMTc2IiB5PSI5NiIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIzMjAiIHJ4PSIyNCIgZmlsbD0idXJsKCNnMykiLz4KICAKICA8IS0tIE1pZGRsZSBjYXJkIC0tPgogIDxyZWN0IHg9IjE0OCIgeT0iODAiIHdpZHRoPSIyMjAiIGhlaWdodD0iMzIwIiByeD0iMjQiIGZpbGw9InVybCgjZzIpIi8+CiAgCiAgPCEtLSBGcm9udCBjYXJkIChtYWluKSAtLT4KICA8cmVjdCB4PSIxMTYiIHk9IjY0IiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjMyMCIgcng9IjI0IiBmaWxsPSJ1cmwoI2cpIi8+CiAgCiAgPCEtLSBMaW5lcyBvbiBmcm9udCBjYXJkIHN1Z2dlc3RpbmcgY29udGVudCAtLT4KICA8cmVjdCB4PSIxNTIiIHk9IjE2MCIgd2lkdGg9IjE0OCIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiMxODE4MWYiIG9wYWNpdHk9IjAuMzUiLz4KICA8cmVjdCB4PSIxNTIiIHk9IjE5MiIgd2lkdGg9IjEwOCIgaGVpZ2h0PSIxMCIgcng9IjUiIGZpbGw9IiMxODE4MWYiIG9wYWNpdHk9IjAuMiIvPgogIDxyZWN0IHg9IjE1MiIgeT0iMjE2IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iIzE4MTgxZiIgb3BhY2l0eT0iMC4yIi8+CiAgCiAgPCEtLSBEb3RzIGF0IGJvdHRvbSBzdWdnZXN0aW5nIGNhcm91c2VsIHBhZ2luYXRpb24gLS0+CiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iNDMyIiByPSIxNCIgZmlsbD0idXJsKCNnKSIvPgogIDxjaXJjbGUgY3g9IjI0NCIgY3k9IjQzMiIgcj0iMTIiIGZpbGw9InVybCgjZykiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjI4NCIgY3k9IjQzMiIgcj0iMTIiIGZpbGw9InVybCgjZykiIG9wYWNpdHk9IjAuMjUiLz4KICA8Y2lyY2xlIGN4PSIzMjQiIGN5PSI0MzIiIHI9IjEyIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjE1Ii8+Cjwvc3ZnPgo=">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmOTczMTYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmJiZjI0Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJnMiIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmOTczMTYiIHN0b3Atb3BhY2l0eT0iMC40Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIgc3RvcC1vcGFjaXR5PSIwLjMiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImczIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIgc3RvcC1vcGFjaXR5PSIwLjIiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmJiZjI0IiBzdG9wLW9wYWNpdHk9IjAuMTUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIAogIDwhLS0gRGFyayByb3VuZGVkIGJhY2tncm91bmQgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSI5NiIgZmlsbD0iIzE4MTgxZiIvPgogIAogIDwhLS0gQmFjayBjYXJkIChtb3N0IG9mZnNldCkgLS0+CiAgPHJlY3QgeD0iMTc2IiB5PSI5NiIgd2lkdGg9IjIyMCIgaGVpZ2h0PSIzMjAiIHJ4PSIyNCIgZmlsbD0idXJsKCNnMykiLz4KICAKICA8IS0tIE1pZGRsZSBjYXJkIC0tPgogIDxyZWN0IHg9IjE0OCIgeT0iODAiIHdpZHRoPSIyMjAiIGhlaWdodD0iMzIwIiByeD0iMjQiIGZpbGw9InVybCgjZzIpIi8+CiAgCiAgPCEtLSBGcm9udCBjYXJkIChtYWluKSAtLT4KICA8cmVjdCB4PSIxMTYiIHk9IjY0IiB3aWR0aD0iMjIwIiBoZWlnaHQ9IjMyMCIgcng9IjI0IiBmaWxsPSJ1cmwoI2cpIi8+CiAgCiAgPCEtLSBMaW5lcyBvbiBmcm9udCBjYXJkIHN1Z2dlc3RpbmcgY29udGVudCAtLT4KICA8cmVjdCB4PSIxNTIiIHk9IjE2MCIgd2lkdGg9IjE0OCIgaGVpZ2h0PSIxMiIgcng9IjYiIGZpbGw9IiMxODE4MWYiIG9wYWNpdHk9IjAuMzUiLz4KICA8cmVjdCB4PSIxNTIiIHk9IjE5MiIgd2lkdGg9IjEwOCIgaGVpZ2h0PSIxMCIgcng9IjUiIGZpbGw9IiMxODE4MWYiIG9wYWNpdHk9IjAuMiIvPgogIDxyZWN0IHg9IjE1MiIgeT0iMjE2IiB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEwIiByeD0iNSIgZmlsbD0iIzE4MTgxZiIgb3BhY2l0eT0iMC4yIi8+CiAgCiAgPCEtLSBEb3RzIGF0IGJvdHRvbSBzdWdnZXN0aW5nIGNhcm91c2VsIHBhZ2luYXRpb24gLS0+CiAgPGNpcmNsZSBjeD0iMjAwIiBjeT0iNDMyIiByPSIxNCIgZmlsbD0idXJsKCNnKSIvPgogIDxjaXJjbGUgY3g9IjI0NCIgY3k9IjQzMiIgcj0iMTIiIGZpbGw9InVybCgjZykiIG9wYWNpdHk9IjAuNCIvPgogIDxjaXJjbGUgY3g9IjI4NCIgY3k9IjQzMiIgcj0iMTIiIGZpbGw9InVybCgjZykiIG9wYWNpdHk9IjAuMjUiLz4KICA8Y2lyY2xlIGN4PSIzMjQiIGN5PSI0MzIiIHI9IjEyIiBmaWxsPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjE1Ii8+Cjwvc3ZnPgo=">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Playfair+Display:wght@600;700;800&family=Space+Mono:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0e0e12;--surface:#18181f;--surface2:#22222c;--border:#2a2a36;--text:#f0eeeb;--text-dim:#8a8895;--accent:#f97316;--accent2:#fb923c;--accent-glow:rgba(249,115,22,0.15);--danger:#ef4444;--danger-glow:rgba(239,68,68,0.12);--radius:14px;--font:'DM Sans',sans-serif;--display:'Playfair Display',serif}
+body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;overflow-x:hidden;-webkit-text-size-adjust:100%}
+
+.hero{text-align:center;padding:48px 24px 0;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:800px;height:600px;background:radial-gradient(ellipse,rgba(249,115,22,0.08) 0%,transparent 70%);pointer-events:none}
+.logo{font-family:var(--display);font-size:3.2rem;font-weight:800;background:linear-gradient(135deg,var(--accent),#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-1px}
+.tagline-main{font-family:var(--display);font-size:1.3rem;font-weight:700;font-style:italic;color:var(--accent2);margin-top:14px}
+.tagline{color:var(--text-dim);margin-top:10px;font-size:1rem;max-width:480px;margin-inline:auto;line-height:1.6}
+.hero-visual{margin:36px auto 0;max-width:700px;display:flex;justify-content:center}
+.phone-mockup{width:260px;filter:drop-shadow(0 20px 60px rgba(249,115,22,0.12));animation:floatUp .8s ease-out}
+@keyframes floatUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero-badges{display:flex;gap:8px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:5px;padding:7px 12px;background:var(--surface);border:1px solid var(--border);border-radius:100px;font-size:.75rem;color:var(--text-dim)}
+.badge svg{flex-shrink:0}
+.hero-divider{width:200px;height:1px;margin:36px auto 0;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+
+.app{max-width:900px;margin:0 auto;padding:32px 28px 40px;display:flex;flex-direction:column;gap:24px}
+@media(max-width:800px){
+  .app{grid-template-columns:1fr;padding:20px 16px 40px}
+  .phone-mockup{width:200px}
+  .logo{font-size:2.6rem}
+  .tagline-main{font-size:1.2rem}
+  .tagline{font-size:1.05rem}
+  .hero{padding:36px 20px 0}
+  .hero-badges{gap:6px}
+  .badge{font-size:.82rem;padding:8px 14px}
+
+  /* Sidebar on mobile */
+  .slide-tab{padding:14px}
+  .slide-tab .num{width:32px;height:32px;font-size:.9rem}
+  .slide-tab .preview-text{font-size:.9rem}
+  .slide-tab .del-btn{width:34px;height:34px;font-size:.9rem}
+  .slide-tab .drag-handle{font-size:1.2rem}
+  .add-slide-btn{font-size:1rem;padding:16px}
+  .slide-count{font-size:.82rem}
+  .reset-btn{font-size:.85rem;padding:9px 16px}
+
+  /* Editor on mobile */
+  .editor{padding:20px 16px;gap:18px}
+  .editor-section label{font-size:.78rem;margin-bottom:8px}
+  .editor-section input[type="text"],.editor-section input[type="url"],.editor-section textarea{font-size:17px;padding:14px 16px}
+  .editor-section textarea{min-height:80px}
+  .color-swatch{width:38px;height:38px;border-radius:10px}
+  .color-row{gap:10px}
+
+  /* Format toolbar on mobile */
+  .fmt-btn{width:40px;height:40px;font-size:.95rem;border-radius:9px}
+  .font-select{font-size:.9rem;padding:10px 12px;max-width:160px}
+  .size-btn{padding:8px 14px;font-size:.82rem}
+  .symbol-btn{width:38px;height:38px;font-size:1.1rem}
+  .symbol-row{gap:4px}
+
+  /* Layout & ratio options */
+  .layout-opt,.ratio-opt{padding:12px;font-size:.85rem}
+  .ratio-opt strong{font-size:.92rem}
+
+  /* Photo */
+  .photo-upload-label{font-size:1rem;padding:16px}
+  .photo-preview-box .remove-photo-btn{width:38px;height:38px;font-size:1.2rem}
+
+  /* Preview section */
+  .nav-arrows button{width:48px;height:48px;font-size:1.3rem}
+  .dots span{width:9px;height:9px}
+  .btn-primary{font-size:1.05rem;padding:16px 28px}
+  .export-status{font-size:.92rem}
+
+  /* Below the fold sections */
+  .section-anchor{font-size:.75rem}
+  .how-section h2{font-size:1.7rem}
+  .how-section .subtitle{font-size:1rem}
+  .step-card h3{font-size:1.05rem}
+  .step-card p{font-size:.92rem}
+  .share-section h2{font-size:1.4rem}
+  .share-chip{font-size:.88rem;padding:10px 18px}
+  .use-cases h2{font-size:1.5rem}
+  .use-card h4{font-size:.95rem}
+  .use-card p{font-size:.88rem}
+  .use-card{padding:18px 16px}
+
+  /* Confirm dialogs */
+  .confirm-box p{font-size:1.05rem}
+  .confirm-box .confirm-btns button{font-size:1rem;padding:12px 28px}
+}
+
+/* ═══ VIEWER MODE ═══ */
+#viewerApp{display:none}
+body.viewer-mode{overflow:hidden}
+body.viewer-mode #builderPage{display:none!important}
+body.viewer-mode #viewerApp{display:flex;flex-direction:column;height:100vh}
+.viewer{flex:1;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.slide-wrap{flex:1;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.vslide{position:absolute;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transition:transform .4s cubic-bezier(.4,0,.2,1),opacity .4s;will-change:transform,opacity}
+.vslide.active{transform:translateX(0);opacity:1}
+.vslide.left{transform:translateX(-100%);opacity:0}
+.vslide.right{transform:translateX(100%);opacity:0}
+.vslide .s-image{max-width:80%;object-fit:contain;border-radius:14px;margin-bottom:24px}
+.vslide .s-image.img-sm{max-height:20%}
+.vslide .s-image.img-md{max-height:40%}
+.vslide .s-image.img-lg{max-height:65%}
+.vslide .s-heading{font-weight:700;line-height:1.2;margin-bottom:14px;word-break:break-word;max-width:88%;padding:0 20px}
+.vslide .s-body{line-height:1.55;opacity:.85;word-break:break-word;max-width:85%;padding:0 20px}
+.vslide .s-link{margin-top:20px;display:inline-block;padding:12px 28px;border-radius:50px;font-family:var(--font);font-weight:700;font-size:.9rem;word-break:break-all;text-decoration:none}
+.vslide .s-number{position:absolute;bottom:16px;right:20px;font-size:.72rem;opacity:.4;font-family:var(--font)}
+.vslide .s-branding{position:absolute;bottom:16px;left:20px;font-size:.6rem;opacity:.25;font-family:var(--display);letter-spacing:1px}
+.vnav-bar{display:flex;align-items:center;justify-content:center;gap:12px;padding:16px 20px;background:rgba(14,14,18,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.vnav-bar button{width:44px;height:44px;border-radius:50%;background:var(--surface);border:1px solid var(--border);color:var(--text);cursor:pointer;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.vnav-bar button:hover{border-color:var(--accent);color:var(--accent)}
+.vnav-bar button:disabled{opacity:.3;cursor:default}
+.vnav-dots{display:flex;gap:6px}
+.vnav-dots span{width:8px;height:8px;border-radius:50%;background:var(--border);transition:all .25s;cursor:pointer}
+.vnav-dots span.active{background:var(--accent);transform:scale(1.3)}
+.brand-bar{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:var(--surface);border-top:1px solid var(--border)}
+.brand-bar a{font-family:var(--display);font-size:.9rem;font-weight:700;background:linear-gradient(135deg,var(--accent),#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.brand-bar .cta{font-size:.78rem;color:var(--accent);text-decoration:none;padding:6px 14px;border:1px solid var(--border);border-radius:100px;transition:all .15s;-webkit-text-fill-color:var(--accent)}
+.brand-bar .cta:hover{border-color:var(--accent);background:rgba(249,115,22,.1)}
+.vloading,.verror-page{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;text-align:center;padding:40px}
+.vloading .spinner{width:40px;height:40px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin-bottom:16px}
+.verror-page .err-icon{font-size:3rem;margin-bottom:16px}
+.verror-page h2{font-family:var(--display);font-size:1.6rem;margin-bottom:8px}
+.verror-page p{color:var(--text-dim);margin-bottom:20px;font-size:.95rem}
+.verror-page a{color:var(--accent);text-decoration:none;font-weight:600;padding:12px 28px;border:1px solid var(--accent);border-radius:10px;transition:all .15s}
+.verror-page a:hover{background:rgba(249,115,22,.1)}
+.size-sm-h{font-size:clamp(1.1rem,4vw,1.6rem)}
+.size-md-h{font-size:clamp(1.4rem,5.5vw,2.2rem)}
+.size-lg-h{font-size:clamp(1.8rem,7vw,3rem)}
+.size-sm-b{font-size:clamp(.78rem,2.5vw,1rem)}
+.size-md-b{font-size:clamp(.88rem,3vw,1.2rem)}
+.size-lg-b{font-size:clamp(1rem,3.5vw,1.5rem)}
+
+.sidebar{display:flex;flex-direction:row;gap:8px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;align-items:center;flex-wrap:wrap}
+.slide-tab{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:12px;cursor:pointer;transition:all .2s;user-select:none;-webkit-user-select:none;flex-shrink:0}
+.slide-tab:hover{border-color:var(--accent)}
+.slide-tab.active{border-color:var(--accent);background:var(--accent-glow)}
+.slide-tab.dragging{opacity:.5;border-color:var(--accent)}
+.slide-tab .drag-handle{cursor:grab;color:var(--text-dim);font-size:1.1rem;padding:0 2px;flex-shrink:0;display:flex;align-items:center;touch-action:none}
+.slide-tab .drag-handle:active{cursor:grabbing}
+.slide-tab .num{width:30px;height:30px;border-radius:8px;background:var(--surface2);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;flex-shrink:0}
+.slide-tab.active .num{background:var(--accent);color:#fff}
+.slide-tab .preview-text{font-size:.88rem;color:var(--text-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}
+.slide-tab .del-btn{width:30px;height:30px;border-radius:8px;background:var(--danger-glow);border:1px solid transparent;color:var(--danger);cursor:pointer;font-size:.85rem;flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.slide-tab .del-btn:hover{background:var(--danger);color:#fff}
+.add-slide-btn{padding:12px 20px;background:none;border:2px dashed var(--border);border-radius:12px;color:var(--text-dim);cursor:pointer;font-family:var(--font);font-size:.92rem;transition:all .2s;flex-shrink:0;white-space:nowrap}
+.add-slide-btn:hover{border-color:var(--accent);color:var(--accent)}
+.sidebar-footer{display:flex;gap:10px;align-items:center;flex-shrink:0}
+.slide-count{font-size:.78rem;color:var(--text-dim);flex:1;text-align:center}
+.reset-btn{padding:8px 16px;background:none;border:1px solid var(--border);border-radius:8px;color:var(--text-dim);cursor:pointer;font-family:var(--font);font-size:.8rem;transition:all .15s;white-space:nowrap}
+.reset-btn:hover{border-color:var(--danger);color:var(--danger)}
+
+.editor{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:18px}
+.editor-preview-row{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.editor-col{min-width:0}
+.preview-col{min-width:0}
+@media(max-width:800px){.editor-preview-row{grid-template-columns:1fr}}
+.editor-section label{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:2px;color:var(--text-dim);margin-bottom:8px;font-weight:500}
+.editor-section input[type="text"],.editor-section input[type="url"],.editor-section textarea{width:100%;background:var(--surface2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;color:var(--text);font-family:var(--font);font-size:16px;outline:none;transition:border-color .2s;-webkit-appearance:none;appearance:none}
+.editor-section input:focus,.editor-section textarea:focus{border-color:var(--accent)}
+.editor-section textarea{resize:vertical;min-height:72px;line-height:1.5}
+.color-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.color-swatch{width:36px;height:36px;border-radius:9px;border:2px solid transparent;cursor:pointer;transition:all .15s}
+.color-swatch:hover{transform:scale(1.1)}
+.color-swatch.active{border-color:#fff;box-shadow:0 0 0 2px var(--accent)}
+.photo-area{display:flex;flex-direction:column;gap:8px}
+.photo-preview-box{position:relative;border-radius:12px;overflow:hidden;background:var(--surface2);border:1px solid var(--border)}
+.photo-preview-box img{display:block;width:100%;max-height:160px;object-fit:contain;background:var(--surface2)}
+.photo-preview-box .remove-photo-btn{position:absolute;top:8px;right:8px;background:rgba(0,0,0,.8);border:none;color:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center}
+.photo-upload-label{display:flex;align-items:center;justify-content:center;gap:8px;padding:16px;border:2px dashed var(--border);border-radius:12px;color:var(--text-dim);cursor:pointer;font-size:.92rem;transition:all .2s;-webkit-tap-highlight-color:transparent}
+.photo-upload-label:hover,.photo-upload-label:active{border-color:var(--accent);color:var(--accent)}
+.photo-upload-label input{display:none}
+
+/* Formatting toolbar */
+.format-toolbar{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.fmt-group{display:flex;gap:4px;padding-right:10px;margin-right:6px;border-right:1px solid var(--border)}
+.fmt-group:last-child{border-right:none;padding-right:0;margin-right:0}
+.fmt-btn{width:36px;height:36px;border-radius:8px;background:var(--surface2);border:1px solid var(--border);color:var(--text-dim);cursor:pointer;font-size:.88rem;display:flex;align-items:center;justify-content:center;transition:all .12s;font-family:var(--font);padding:0}
+.fmt-btn:hover{border-color:var(--accent);color:var(--accent)}
+.fmt-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.fmt-btn.bold-btn{font-weight:800}
+.fmt-btn.italic-btn{font-style:italic}
+.fmt-btn.underline-btn{text-decoration:underline}
+
+/* Font selector */
+.font-select{background:var(--surface2);border:1px solid var(--border);border-radius:8px;color:var(--text);font-family:var(--font);font-size:.88rem;padding:8px 12px;outline:none;cursor:pointer;max-width:150px;-webkit-appearance:none;appearance:none;transition:border-color .15s}
+.font-select:focus{border-color:var(--accent)}
+
+/* Size options */
+.size-options{display:flex;gap:4px}
+.size-btn{padding:7px 13px;background:var(--surface2);border:1px solid var(--border);border-radius:8px;cursor:pointer;font-size:.78rem;color:var(--text-dim);transition:all .12s;font-family:var(--font)}
+.size-btn:hover{border-color:var(--accent)}
+.size-btn.active{border-color:var(--accent);color:var(--accent);background:var(--accent-glow)}
+
+/* Symbol picker */
+.symbol-row{display:flex;gap:4px;flex-wrap:wrap}
+.symbol-btn{width:34px;height:34px;border-radius:7px;background:var(--surface2);border:1px solid transparent;color:var(--text);cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:all .12s}
+.symbol-btn:hover{border-color:var(--accent);background:var(--accent-glow)}
+
+.layout-options,.ratio-options{display:flex;gap:8px}
+.layout-opt,.ratio-opt{flex:1;padding:12px;background:var(--surface2);border:2px solid var(--border);border-radius:10px;cursor:pointer;text-align:center;font-size:.82rem;color:var(--text-dim);transition:all .15s;font-family:var(--font);line-height:1.3}
+.layout-opt:hover,.ratio-opt:hover{border-color:var(--accent)}
+.layout-opt.active,.ratio-opt.active{border-color:var(--accent);color:var(--accent);background:var(--accent-glow)}
+.ratio-opt strong{display:block;font-size:.8rem}
+
+.preview-section{margin-top:20px;padding-top:20px;border-top:1px solid var(--border)}
+.preview-container{position:relative;width:100%;max-width:380px;margin:0 auto}
+.slide-canvas{width:100%;border-radius:14px;overflow:hidden;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;transition:aspect-ratio .3s}
+.slide-canvas.ratio-square{aspect-ratio:1/1;padding:32px}
+.slide-canvas.ratio-portrait{aspect-ratio:9/16;padding:48px 32px}
+.slide-canvas.ratio-landscape{aspect-ratio:16/9;padding:24px 32px}
+.slide-canvas.layout-top{justify-content:flex-start;padding-top:10%}
+.slide-canvas.layout-bottom{justify-content:flex-end;padding-bottom:10%}
+.slide-canvas .slide-image{max-width:85%;object-fit:contain;border-radius:12px;margin-bottom:20px}
+.slide-canvas .slide-image.img-sm{max-height:25%}
+.slide-canvas .slide-image.img-md{max-height:45%}
+.slide-canvas .slide-image.img-lg{max-height:70%}
+.slide-canvas .slide-heading{font-weight:700;font-size:1.65rem;line-height:1.2;margin-bottom:12px;word-break:break-word}
+.slide-canvas .slide-heading.size-sm{font-size:1.2rem}
+.slide-canvas .slide-heading.size-lg{font-size:2.1rem}
+.slide-canvas .slide-body{font-size:1rem;line-height:1.55;opacity:.85;word-break:break-word;max-width:90%}
+.slide-canvas .slide-body.size-sm{font-size:.82rem}
+.slide-canvas .slide-body.size-lg{font-size:1.2rem}
+.slide-canvas .slide-link-pill{margin-top:16px;padding:10px 22px;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:700;word-break:break-all;max-width:85%}
+.slide-canvas .slide-number{position:absolute;bottom:14px;right:18px;font-size:.72rem;opacity:.4;font-weight:500}
+.slide-canvas .branding{position:absolute;bottom:14px;left:18px;font-size:.6rem;opacity:.25;letter-spacing:1px}
+
+.nav-arrows{display:flex;justify-content:center;gap:10px;margin-top:14px}
+.nav-arrows button{width:46px;height:46px;border-radius:50%;background:var(--surface2);border:1px solid var(--border);color:var(--text);cursor:pointer;font-size:1.2rem;transition:all .15s;display:flex;align-items:center;justify-content:center}
+.nav-arrows button:hover{border-color:var(--accent);color:var(--accent)}
+.dots{display:flex;justify-content:center;gap:6px;margin-top:8px}
+.dots span{width:8px;height:8px;border-radius:50%;background:var(--border);transition:all .2s;cursor:pointer}
+.dots span.active{background:var(--accent);transform:scale(1.25)}
+.actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap;justify-content:center}
+.btn-primary{padding:16px 32px;background:linear-gradient(135deg,var(--accent),#ea580c);border:none;border-radius:12px;color:#fff;font-family:var(--font);font-weight:700;font-size:1rem;cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(249,115,22,.3);display:flex;align-items:center;gap:8px}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 28px rgba(249,115,22,.4)}
+.btn-primary:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.btn-primary .btn-spinner{width:18px;height:18px;border:2px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.export-status{text-align:center;margin-top:12px;font-size:.88rem;color:var(--accent);min-height:22px}
+
+/* Save/Share modal */
+.modal-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.88);z-index:1050;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.modal-overlay.active{display:block}
+.modal-content{max-width:500px;margin:32px auto;padding:24px 20px 28px;background:var(--surface);border:1px solid var(--border);border-radius:20px}
+@media(max-width:540px){.modal-content{margin:16px 10px;padding:20px 16px 24px}}
+.modal-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.modal-header h2{font-family:var(--display);font-size:1.4rem}
+.modal-close-x{background:none;border:none;color:var(--text-dim);font-size:1.3rem;cursor:pointer;padding:4px 8px;border-radius:8px;transition:all .15s}
+.modal-close-x:hover{color:var(--text);background:var(--surface2)}
+.modal-hint{background:var(--accent-glow);border:1px solid rgba(249,115,22,.25);border-radius:12px;padding:14px 16px;margin-bottom:20px;font-size:.9rem;line-height:1.5;color:var(--accent2)}
+.modal-images{display:flex;flex-direction:column;gap:20px}
+.slide-export-card{position:relative;border-radius:14px;overflow:hidden;background:var(--surface2);border:1px solid var(--border)}
+.slide-export-card img{display:block;width:100%;border-radius:0}
+.slide-export-card .card-actions{display:flex;gap:8px;padding:12px;background:var(--surface)}
+.slide-export-card .card-actions button{flex:1;padding:10px;border-radius:8px;font-family:var(--font);font-weight:600;font-size:.85rem;cursor:pointer;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:6px}
+.card-save-btn{background:var(--accent);border:none;color:#fff}
+.card-save-btn:hover{background:#ea580c}
+.card-share-btn{background:var(--surface2);border:1px solid var(--border);color:var(--text)}
+.card-share-btn:hover{border-color:var(--accent)}
+.modal-actions{display:flex;gap:10px;margin-top:20px;justify-content:center;flex-wrap:wrap}
+.modal-actions button{padding:12px 24px;border-radius:10px;font-family:var(--font);font-weight:600;font-size:.9rem;cursor:pointer;transition:all .15s}
+.modal-done-btn{background:var(--surface2);border:1px solid var(--border);color:var(--text)}
+.modal-done-btn:hover{border-color:var(--accent)}
+.modal-saveall-btn{background:linear-gradient(135deg,var(--accent),#ea580c);border:none;color:#fff}
+.modal-saveall-btn:hover{transform:translateY(-1px)}
+.generating-msg{padding:40px;text-align:center;color:var(--text-dim);font-size:.9rem}
+.generating-msg .spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 12px}
+
+.confirm-overlay{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.7);z-index:1100;justify-content:center;align-items:center}
+.confirm-overlay.active{display:flex}
+.confirm-box{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px 24px;text-align:center;max-width:340px;width:90%}
+.confirm-box p{margin-bottom:20px;font-size:.95rem;line-height:1.4}
+.confirm-box .confirm-btns{display:flex;gap:10px;justify-content:center}
+.confirm-box .confirm-btns button{padding:10px 24px;border-radius:10px;font-family:var(--font);font-weight:600;font-size:.9rem;cursor:pointer;transition:all .15s}
+.btn-cancel{background:var(--surface2);border:1px solid var(--border);color:var(--text)}
+.btn-danger{background:var(--danger);border:1px solid var(--danger);color:#fff}
+.btn-danger:hover{background:#dc2626}
+
+.how-section{max-width:900px;margin:60px auto 0;padding:0 20px;text-align:center}
+.how-section h2{font-family:var(--display);font-size:2rem;margin-bottom:10px}
+.how-section .subtitle{color:var(--text-dim);margin-bottom:36px;font-size:.92rem}
+.steps-row{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.step-card{flex:1;min-width:190px;max-width:250px;padding:28px 18px 24px;background:var(--surface);border:1px solid var(--border);border-radius:16px;transition:transform .2s,border-color .2s}
+.step-card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.step-card .step-icon{width:56px;height:56px;margin:0 auto 14px}
+.step-card h3{font-size:.95rem;margin-bottom:6px;font-weight:700}
+.step-card p{font-size:.82rem;color:var(--text-dim);line-height:1.45}
+.share-section{max-width:600px;margin:60px auto 0;padding:0 20px;text-align:center}
+.share-section h2{font-family:var(--display);font-size:1.6rem;margin-bottom:16px}
+.share-grid{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.share-chip{padding:9px 16px;background:var(--surface);border:1px solid var(--border);border-radius:100px;font-size:.78rem;color:var(--text-dim)}
+.use-cases{max-width:900px;margin:60px auto 0;padding:0 20px}
+.use-cases h2{font-family:var(--display);font-size:1.8rem;text-align:center;margin-bottom:32px}
+.use-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.use-card{padding:20px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);display:flex;gap:12px;align-items:flex-start;transition:border-color .2s}
+.use-card:hover{border-color:var(--accent)}
+.use-card .use-icon{width:40px;height:40px;flex-shrink:0}
+.use-card h4{font-size:.85rem;margin-bottom:3px}
+.use-card p{font-size:.78rem;color:var(--text-dim);line-height:1.4}
+footer{text-align:center;padding:50px 20px 32px;color:var(--text-dim);font-size:.85rem}
+footer .footer-logo{font-family:var(--display);font-size:1.2rem;background:linear-gradient(135deg,var(--accent),#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:3px}
+footer .footer-tagline{font-style:italic;color:var(--accent2);font-size:.88rem;margin-bottom:6px}
+footer .footer-cta{margin-bottom:10px}
+footer .footer-email{display:inline-block;color:var(--accent);text-decoration:none;font-weight:500;font-size:.9rem;padding:6px 16px;border:1px solid var(--border);border-radius:100px;transition:all .15s;margin-top:12px}
+footer .footer-email:hover{border-color:var(--accent);background:var(--accent-glow)}
+.section-anchor{display:block;text-align:center;font-size:.68rem;text-transform:uppercase;letter-spacing:5px;color:var(--accent);margin-bottom:6px;font-weight:500}
+</style>
+</head>
+<body>
+
+<div id="builderPage">
+<div class="hero">
+  <div class="logo">Carousel</div>
+  <div class="tagline-main">Get your message around.</div>
+  <p class="tagline">Build swipeable slides. Download as one file. Drop them in any chat, post, or story.</p>
+  <div class="hero-visual">
+    <svg class="phone-mockup" viewBox="0 0 280 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="4" width="272" height="532" rx="36" fill="#1a1a2e" stroke="#333" stroke-width="3"/><rect x="16" y="50" width="248" height="440" rx="4" fill="#0f172a"/><rect x="90" y="12" width="100" height="28" rx="14" fill="#111"/><circle cx="140" cy="26" r="5" fill="#222"/>
+      <rect x="28" y="66" width="160" height="36" rx="16" fill="#2a2a3a"/><text x="44" y="88" font-family="DM Sans,sans-serif" font-size="11" fill="#ccc">Hey! Here's the deck 🔥</text>
+      <rect x="132" y="114" width="120" height="36" rx="16" fill="#f97316"/><text x="152" y="136" font-family="DM Sans,sans-serif" font-size="11" fill="#fff">Love it! 🎯</text>
+      <rect x="56" y="170" width="145" height="210" rx="12" fill="#14210e" opacity=".3"/><rect x="46" y="166" width="145" height="210" rx="12" fill="#1e0a2e" opacity=".5"/>
+      <rect x="36" y="162" width="145" height="210" rx="12" fill="#1e0a2e"/><rect x="36" y="162" width="145" height="210" rx="12" stroke="#c084fc" stroke-width="1" stroke-opacity=".3"/>
+      <text x="108" y="240" font-family="Playfair Display,serif" font-size="16" font-weight="700" fill="#f3e8ff" text-anchor="middle">Product Launch</text>
+      <text x="108" y="262" font-family="Playfair Display,serif" font-size="16" font-weight="700" fill="#f3e8ff" text-anchor="middle">2026</text>
+      <text x="108" y="295" font-family="DM Sans,sans-serif" font-size="10" fill="#c084fc" opacity=".8" text-anchor="middle">Swipe to explore →</text>
+      <circle cx="88" cy="350" r="3.5" fill="#c084fc"/><circle cx="100" cy="350" r="3" fill="#4a3860"/><circle cx="112" cy="350" r="3" fill="#4a3860"/><circle cx="124" cy="350" r="3" fill="#4a3860"/>
+      <rect x="28" y="392" width="180" height="36" rx="16" fill="#2a2a3a"/><text x="44" y="414" font-family="DM Sans,sans-serif" font-size="11" fill="#ccc">Check out slide 3! 👀</text>
+      <rect x="16" y="446" width="248" height="40" rx="20" fill="#1e1e2a" stroke="#333" stroke-width="1"/><text x="36" y="470" font-family="DM Sans,sans-serif" font-size="11" fill="#555">iMessage</text>
+      <rect x="100" y="510" width="80" height="5" rx="2.5" fill="#333"/>
+    </svg>
+  </div>
+  <div class="hero-badges">
+    <div class="badge"><svg width="14" height="14" fill="none" stroke="#f97316" stroke-width="2" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>iMessage</div>
+    <div class="badge"><svg width="14" height="14" fill="none" stroke="#25D366" stroke-width="2" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>WhatsApp</div>
+    <div class="badge"><svg width="14" height="14" fill="none" stroke="#4285F4" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z"/></svg>Android</div>
+    <div class="badge"><svg width="14" height="14" fill="none" stroke="#E1306C" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg>Instagram</div>
+    <div class="badge"><svg width="14" height="14" fill="none" stroke="#1877F2" stroke-width="2" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg>Facebook</div>
+    <div class="badge"><svg width="14" height="14" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><path d="M9 18V6l12 6-12 6z"/></svg>TikTok</div>
+  </div>
+  <div class="hero-divider"></div>
+</div>
+
+<div style="max-width:900px;margin:0 auto;padding:36px 28px 0;">
+  <div class="section-anchor">Builder</div>
+  <h2 style="font-family:var(--display);font-size:1.7rem;text-align:center;margin-bottom:24px;">Create Your Deck</h2>
+</div>
+
+<div class="app">
+  <div class="sidebar" id="sidebar"></div>
+  <div class="editor-preview-row">
+    <div class="editor-col">
+      <div class="editor" id="editor"></div>
+    </div>
+    <div class="preview-col">
+      <div class="preview-section">
+        <div class="preview-container">
+          <div class="slide-canvas" id="preview"></div>
+          <div class="nav-arrows"><button onclick="prevSlide()">‹</button><button onclick="nextSlide()">›</button></div>
+          <div class="dots" id="dots"></div>
+        </div>
+        <div class="actions">
+          <button class="btn-primary" id="exportBtn" onclick="exportImages()"><span id="exportBtnText">📱 Save Slides</span></button>
+          <button class="btn-secondary" id="shareBtn" onclick="shareDeck()" style="padding:16px 28px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;color:var(--text);font-family:var(--font);font-weight:600;font-size:.95rem;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:8px">
+            <span>🔗 Share as Link</span>
+          </button>
+        </div>
+        <div class="export-status" id="exportStatus"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hidden offscreen render target -->
+<div id="offscreenWrap" style="position:fixed;left:-9999px;top:0;pointer-events:none;z-index:-1;overflow:hidden;">
+  <div class="slide-canvas" id="offscreenCanvas"></div>
+</div>
+
+<!-- Save/Share Modal -->
+<div class="modal-overlay" id="saveModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 id="modalTitle">Your Slides</h2>
+      <button class="modal-close-x" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-hint" id="modalHint"></div>
+    <div class="modal-images" id="modalImages">
+      <div class="generating-msg"><div class="spinner"></div>Generating slides...</div>
+    </div>
+    <div class="modal-actions" id="modalActions"></div>
+  </div>
+</div>
+
+<!-- Share Link Modal -->
+<div class="modal-overlay" id="shareLinkModal">
+  <div class="modal-content" style="max-width:440px">
+    <div class="modal-header">
+      <h2>Share as Link</h2>
+      <button class="modal-close-x" onclick="closeShareModal()">✕</button>
+    </div>
+    <div id="shareLinkBody">
+      <div class="editor-section" style="margin-bottom:16px">
+        <label>Name your link <span style="text-transform:none;letter-spacing:0;font-weight:400;opacity:.7">(optional)</span></label>
+        <div style="display:flex;align-items:center;gap:0;background:var(--surface2);border:1px solid var(--border);border-radius:10px;overflow:hidden;">
+          <span style="padding:12px 4px 12px 14px;color:var(--text-dim);font-size:.88rem;white-space:nowrap;flex-shrink:0">makeacarousel.com/?v=</span>
+          <input type="text" id="slugInput" placeholder="my-deck" style="flex:1;background:transparent;border:none;padding:12px 14px 12px 0;color:var(--text);font-family:var(--font);font-size:16px;outline:none;min-width:0" maxlength="60" oninput="this.value=this.value.toLowerCase().replace(/[^a-z0-9-]/g,'').replace(/--+/g,'-')">
+        </div>
+        <div style="margin-top:6px;font-size:.78rem;color:var(--text-dim)">Letters, numbers, and dashes only. Leave blank for a random link.</div>
+        <div id="slugError" style="margin-top:6px;font-size:.82rem;color:var(--danger);display:none"></div>
+      </div>
+      <button class="btn-primary" style="width:100%;justify-content:center" id="publishBtn" onclick="publishDeck()">
+        <span id="publishBtnText">🔗 Publish &amp; Get Link</span>
+      </button>
+    </div>
+    <div id="shareLinkResult" style="display:none">
+      <div style="background:var(--accent-glow);border:1px solid rgba(249,115,22,.25);border-radius:12px;padding:20px;text-align:center;margin-bottom:16px">
+        <div style="font-size:.82rem;color:var(--accent2);margin-bottom:8px">Your carousel is live!</div>
+        <div id="generatedLink" style="font-size:1.05rem;font-weight:700;word-break:break-all;color:var(--text);margin-bottom:14px"></div>
+        <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+          <button class="btn-primary" style="font-size:.88rem;padding:10px 20px" onclick="copyShareLink()"><span id="copyBtnText">📋 Copy Link</span></button>
+          <button class="modal-done-btn" style="font-size:.88rem;padding:10px 20px" onclick="nativeShareLink()">↗ Share</button>
+        </div>
+      </div>
+      <button class="modal-done-btn" style="width:100%;text-align:center;justify-content:center;display:flex" onclick="closeShareModal()">Done</button>
+    </div>
+  </div>
+</div>
+
+<div class="confirm-overlay" id="confirmDelete"><div class="confirm-box"><p>Delete <strong id="deleteSlideLabel">Slide 1</strong>?</p><div class="confirm-btns"><button class="btn-cancel" onclick="cancelDelete()">Cancel</button><button class="btn-danger" onclick="confirmDeleteAction()">Delete</button></div></div></div>
+<div class="confirm-overlay" id="confirmReset"><div class="confirm-box"><p>Start a new deck?<br><span style="font-size:.85rem;color:var(--text-dim)">This will clear all your slides.</span></p><div class="confirm-btns"><button class="btn-cancel" onclick="cancelReset()">Keep Working</button><button class="btn-danger" onclick="confirmResetAction()">New Deck</button></div></div></div>
+
+<div class="how-section">
+  <div class="section-anchor">How It Works</div><h2>Three Steps</h2>
+  <p class="subtitle">No app. No account. Just build, save, and share.</p>
+  <div class="steps-row">
+    <div class="step-card"><svg class="step-icon" viewBox="0 0 64 64" fill="none"><rect x="8" y="8" width="48" height="48" rx="12" fill="#f97316" opacity=".12"/><rect x="16" y="16" width="32" height="32" rx="6" stroke="#f97316" stroke-width="2.5"/><circle cx="38" cy="22" r="2.5" fill="#f97316"/><path d="M20 40l8-10 6 6 8-8" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>Build Slides</h3><p>Text, photos, links & themes. Up to 10 slides.</p></div>
+    <div class="step-card"><svg class="step-icon" viewBox="0 0 64 64" fill="none"><rect x="8" y="8" width="48" height="48" rx="12" fill="#f97316" opacity=".12"/><path d="M32 18v20" stroke="#f97316" stroke-width="2.5" stroke-linecap="round"/><path d="M24 32l8 8 8-8" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 44h28" stroke="#fbbf24" stroke-width="2.5" stroke-linecap="round"/></svg><h3>Save or Share</h3><p>Save slides to your camera roll or share directly to any app.</p></div>
+    <div class="step-card"><svg class="step-icon" viewBox="0 0 64 64" fill="none"><rect x="8" y="8" width="48" height="48" rx="12" fill="#f97316" opacity=".12"/><rect x="20" y="14" width="24" height="40" rx="5" stroke="#f97316" stroke-width="2"/><rect x="26" y="24" width="12" height="8" rx="1.5" fill="#fbbf24" opacity=".6"/><rect x="26" y="34" width="12" height="8" rx="1.5" fill="#c084fc" opacity=".5"/><path d="M42 33l6 0" stroke="#f97316" stroke-width="2" stroke-linecap="round"/><path d="M46 30l3 3-3 3" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><h3>They Swipe</h3><p>Send as photos in any chat. Recipients swipe through your deck!</p></div>
+  </div>
+</div>
+<div class="share-section"><div class="section-anchor">Works Everywhere</div><h2>Share On</h2><div class="share-grid"><div class="share-chip">💬 iMessage</div><div class="share-chip">💚 WhatsApp</div><div class="share-chip">🤖 Android Messages</div><div class="share-chip">📸 Instagram Carousel</div><div class="share-chip">📘 Facebook</div><div class="share-chip">🎵 TikTok Photo Mode</div></div></div>
+<div class="use-cases"><div class="section-anchor">Perfect For</div><h2>What Will You Build?</h2><div class="use-grid">
+  <div class="use-card"><svg class="use-icon" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="10" fill="#f97316" opacity=".1"/><path d="M13 14h18v16H13z" stroke="#f97316" stroke-width="2" stroke-linejoin="round"/><path d="M17 20h10M17 24h6" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round"/></svg><div><h4>Pitch Decks</h4><p>A teaser right in their texts</p></div></div>
+  <div class="use-card"><svg class="use-icon" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="10" fill="#f97316" opacity=".1"/><circle cx="22" cy="18" r="6" stroke="#f97316" stroke-width="2"/><path d="M12 34c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="#fbbf24" stroke-width="2" stroke-linecap="round"/></svg><div><h4>Portfolios</h4><p>Your work, swipe-ready</p></div></div>
+  <div class="use-card"><svg class="use-icon" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="10" fill="#f97316" opacity=".1"/><rect x="10" y="12" width="24" height="20" rx="3" stroke="#f97316" stroke-width="2"/><path d="M10 20h24" stroke="#fbbf24" stroke-width="1.5"/></svg><div><h4>Product Catalogs</h4><p>Photos, pricing, links</p></div></div>
+  <div class="use-card"><svg class="use-icon" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="10" fill="#f97316" opacity=".1"/><path d="M22 10l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="#f97316" stroke-width="2" stroke-linejoin="round"/></svg><div><h4>Event Invites</h4><p>Swipeable save-the-dates</p></div></div>
+  <div class="use-card"><svg class="use-icon" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="10" fill="#f97316" opacity=".1"/><path d="M12 32l4-8 5 4 6-12 5 16H12z" stroke="#f97316" stroke-width="2" stroke-linejoin="round"/><circle cx="30" cy="14" r="3" stroke="#fbbf24" stroke-width="1.5"/></svg><div><h4>Updates</h4><p>Highlights they'll read</p></div></div>
+  <div class="use-card"><svg class="use-icon" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="10" fill="#f97316" opacity=".1"/><path d="M22 12v10l6 4" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22" cy="22" r="11" stroke="#fbbf24" stroke-width="2"/></svg><div><h4>Tutorials</h4><p>Step-by-step, swipe-through</p></div></div>
+</div></div>
+<footer><div class="footer-logo">Carousel</div><div class="footer-tagline">Get your message around.</div><p class="footer-cta">Build it. Save it. Share it. They swipe it.</p><a href="mailto:elizabeth&#64;makeacarousel.com" class="footer-email">elizabeth&#64;makeacarousel.com</a></footer>
+</div><!-- end builderPage -->
+
+<div id="viewerApp"></div>
+
+<script>
+// ═══ DECK ENCODING/DECODING ═══
+function decompressDeck(encoded){
+  try{
+    let b64=encoded.replace(/-/g,'+').replace(/_/g,'/');
+    while(b64.length%4)b64+='=';
+    const json=decodeURIComponent(escape(atob(b64)));
+    const d=JSON.parse(json);
+    return{
+      slides:(d.s||[]).map(s=>({
+        heading:s.h||'',body:s.b||'',link:s.l||'',image:null,
+        theme:s.t||0,layout:s.la||'center',
+        headingBold:!!s.hb,headingItalic:!!s.hi,headingUnderline:!!s.hu,
+        bodyBold:!!s.bb,bodyItalic:!!s.bi,bodyUnderline:!!s.bu,
+        headingFont:s.hf||0,bodyFont:s.bf||0,
+        headingSize:s.hs||'md',bodySize:s.bs||'md',
+        imageSize:s.is||'md',
+      })),
+      ratio:d.r||'portrait',
+    };
+  }catch(e){return null;}
+}
+
+// ═══ CHECK FOR VIEWER MODE ═══
+const viewSlug=new URLSearchParams(window.location.search).get('v');
+const viewData=new URLSearchParams(window.location.search).get('d');
+
+const V_THEMES=[
+  {name:'Ember',bg:'#1a1a2e',text:'#f0eeeb',accent:'#f97316'},
+  {name:'Ocean',bg:'#0f172a',text:'#e2e8f0',accent:'#38bdf8'},
+  {name:'Forest',bg:'#14210e',text:'#ecfccb',accent:'#84cc16'},
+  {name:'Berry',bg:'#1e0a2e',text:'#f3e8ff',accent:'#c084fc'},
+  {name:'Rose',bg:'#2a0f1a',text:'#ffe4e6',accent:'#fb7185'},
+  {name:'Sand',bg:'#f5f0e8',text:'#1c1917',accent:'#b45309'},
+  {name:'Cloud',bg:'#f8fafc',text:'#0f172a',accent:'#6366f1'},
+  {name:'Midnight',bg:'#020617',text:'#f1f5f9',accent:'#fbbf24'},
+];
+const V_FONTS=[
+  {css:"'DM Sans',sans-serif"},{css:"'Playfair Display',serif"},{css:"'Bebas Neue',sans-serif"},
+  {css:"'Libre Baskerville',serif"},{css:"'Space Mono',monospace"},{css:"'Caveat',cursive"},
+];
+function vEsc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML;}
+function showViewerError(){
+  document.getElementById('viewerApp').innerHTML='<div class="verror-page"><div class="err-icon">📭</div><h2>Carousel not found</h2><p>This link may have expired or doesn\'t exist.</p><a href="https://makeacarousel.com">Make your own →</a></div>';
+}
+let vCurrentIdx=0,vTotalSlides=0;
+function renderViewerMode(data){
+  const sl=data.slides||[];vTotalSlides=sl.length;
+  if(!vTotalSlides){showViewerError();return;}
+  let h='';
+  sl.forEach((s,i)=>{
+    const t=V_THEMES[s.theme]||V_THEMES[0];
+    const hF=V_FONTS[s.headingFont]||V_FONTS[0];
+    const bF=V_FONTS[s.bodyFont]||V_FONTS[0];
+    const hSz='size-'+(s.headingSize||'md')+'-h';
+    const bSz='size-'+(s.bodySize||'md')+'-b';
+    const layout=s.layout||'center';
+    let jc='center',pad='padding:8% 6%';
+    if(layout==='top'){jc='flex-start';pad='padding:12% 6% 6%';}
+    if(layout==='bottom'){jc='flex-end';pad='padding:6% 6% 12%';}
+    const hSt='font-family:'+hF.css+';color:'+t.text+';'+(s.headingBold?'font-weight:700;':'font-weight:400;')+(s.headingItalic?'font-style:italic;':'')+(s.headingUnderline?'text-decoration:underline;':'');
+    const bSt='font-family:'+bF.css+';color:'+t.text+';'+(s.bodyBold?'font-weight:700;':'font-weight:400;')+(s.bodyItalic?'font-style:italic;':'')+(s.bodyUnderline?'text-decoration:underline;':'');
+    const pc=i===0?'active':'right';
+    h+='<div class="vslide '+pc+'" data-vi="'+i+'" style="background:'+t.bg+';justify-content:'+jc+';'+pad+'">';
+    if(s.image)h+='<img class="s-image img-'+(s.imageSize||'md')+'" src="'+s.image+'">';
+    if(s.heading)h+='<div class="s-heading '+hSz+'" style="'+hSt+'">'+vEsc(s.heading)+'</div>';
+    if(s.body)h+='<div class="s-body '+bSz+'" style="'+bSt+'">'+vEsc(s.body).replace(/\n/g,'<br>')+'</div>';
+    if(s.link){
+      var lBg=t.accent,lCol=(t.bg.startsWith('#f')||t.bg.startsWith('#e'))?'#fff':t.text;
+      h+='<a href="'+vEsc(s.link)+'" target="_blank" rel="noopener" class="s-link" style="background:'+lBg+';color:'+lCol+'">'+vEsc(s.link)+'</a>';
+    }
+    h+='<div class="s-number" style="color:'+t.text+'">'+(i+1)+' / '+vTotalSlides+'</div>';
+    h+='<div class="s-branding" style="color:'+t.text+'">Carousel</div></div>';
+  });
+  var dots=sl.map(function(_,i){return '<span class="'+(i===0?'active':'')+'" onclick="vGoTo('+i+')"></span>';}).join('');
+  document.getElementById('viewerApp').innerHTML='<div class="viewer"><div class="slide-wrap" id="vSlideWrap">'+h+'</div><div class="vnav-bar"><button id="vPrevBtn" onclick="vPrev()" disabled>‹</button><div class="vnav-dots" id="vNavDots">'+dots+'</div><button id="vNextBtn" onclick="vNext()" '+(vTotalSlides<=1?'disabled':'')+'>›</button></div><div class="brand-bar"><a href="https://makeacarousel.com">Carousel</a><a href="https://makeacarousel.com" class="cta">Make your own →</a></div></div>';
+  var vtx=0;var vw=document.getElementById('vSlideWrap');
+  vw.addEventListener('touchstart',function(e){vtx=e.touches[0].clientX;},{passive:true});
+  vw.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-vtx;if(Math.abs(dx)>50){dx<0?vNext():vPrev();}},{passive:true});
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')vPrev();if(e.key==='ArrowRight')vNext();});
+}
+function vGoTo(i){if(i<0||i>=vTotalSlides||i===vCurrentIdx)return;document.querySelectorAll('.vslide').forEach(function(s){var si=parseInt(s.dataset.vi);s.className='vslide '+(si===i?'active':(si<i?'left':'right'));});vCurrentIdx=i;vUpdateNav();}
+function vNext(){vGoTo(vCurrentIdx+1);}
+function vPrev(){vGoTo(vCurrentIdx-1);}
+function vUpdateNav(){document.getElementById('vPrevBtn').disabled=vCurrentIdx<=0;document.getElementById('vNextBtn').disabled=vCurrentIdx>=vTotalSlides-1;document.querySelectorAll('.vnav-dots span').forEach(function(d,i){d.className=i===vCurrentIdx?'active':'';});}
+
+// ═══ RUN VIEWER IF NEEDED ═══
+if(viewSlug||viewData){
+  document.body.classList.add('viewer-mode');
+  document.getElementById('viewerApp').innerHTML='<div class="vloading"><div class="spinner"></div><div style="color:var(--text-dim)">Loading carousel...</div></div>';
+  if(viewData){
+    var data=decompressDeck(viewData);
+    if(data){
+      if(data.slides&&data.slides[0]&&data.slides[0].heading)document.title=data.slides[0].heading+' — Carousel';
+      renderViewerMode(data);
+    }else{
+      showViewerError();
+    }
+  }else if(viewSlug){
+    // Load from Firebase via Netlify function
+    (async function(){
+      try{
+        var r=await fetch('/api/deck?slug='+encodeURIComponent(viewSlug));
+        if(!r.ok){showViewerError();return;}
+        var data=await r.json();
+        if(!data||!data.slides){showViewerError();return;}
+        if(data.slides[0]&&data.slides[0].heading)document.title=data.slides[0].heading+' — Carousel';
+        renderViewerMode(data);
+      }catch(e){
+        console.error('Viewer error:',e);
+        showViewerError();
+      }
+    })();
+  }
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script>
+
+// ═══ SHARED STATE (needed by both builder and share functions) ═══
+let selectedRatio='portrait';
+function makeSlide(){return{heading:'',body:'',link:'',image:null,theme:0,layout:'center',headingBold:true,headingItalic:false,headingUnderline:false,bodyBold:false,bodyItalic:false,bodyUnderline:false,headingFont:1,bodyFont:0,headingSize:'md',bodySize:'md',imageSize:'md'}}
+let slides=[Object.assign(makeSlide(),{heading:'Welcome!',body:'Swipe through to see more →'})];
+
+// ═══ BUILDER CODE (only runs if not in viewer mode) ═══
+if(!viewSlug&&!viewData){
+
+const MAX_SLIDES=10;
+const THEMES=[
+  {name:'Ember',bg:'#1a1a2e',text:'#f0eeeb',accent:'#f97316'},
+  {name:'Ocean',bg:'#0f172a',text:'#e2e8f0',accent:'#38bdf8'},
+  {name:'Forest',bg:'#14210e',text:'#ecfccb',accent:'#84cc16'},
+  {name:'Berry',bg:'#1e0a2e',text:'#f3e8ff',accent:'#c084fc'},
+  {name:'Rose',bg:'#2a0f1a',text:'#ffe4e6',accent:'#fb7185'},
+  {name:'Sand',bg:'#f5f0e8',text:'#1c1917',accent:'#b45309'},
+  {name:'Cloud',bg:'#f8fafc',text:'#0f172a',accent:'#6366f1'},
+  {name:'Midnight',bg:'#020617',text:'#f1f5f9',accent:'#fbbf24'},
+];
+const FONTS=[
+  {name:'DM Sans',css:"'DM Sans',sans-serif",label:'DM Sans'},
+  {name:'Playfair Display',css:"'Playfair Display',serif",label:'Playfair'},
+  {name:'Bebas Neue',css:"'Bebas Neue',sans-serif",label:'Bebas Neue'},
+  {name:'Libre Baskerville',css:"'Libre Baskerville',serif",label:'Baskerville'},
+  {name:'Space Mono',css:"'Space Mono',monospace",label:'Space Mono'},
+  {name:'Caveat',css:"'Caveat',cursive",label:'Caveat'},
+];
+const SYMBOLS=['→','←','•','✦','★','✓','♥','⚡','🔥','💡','📌','🎯','💰','📊','🚀','✨'];
+const RATIOS={
+  portrait:{w:1080,h:1920,label:'9:16 Portrait',desc:'Best for texting',cssClass:'ratio-portrait'},
+  square:{w:1080,h:1080,label:'1:1 Square',desc:'Instagram feed',cssClass:'ratio-square'},
+  landscape:{w:1920,h:1080,label:'16:9 Landscape',desc:'Presentations',cssClass:'ratio-landscape'},
+};
+
+let currentSlide=0;let pendingDeleteIndex=-1;
+
+// ═══ DRAG ═══
+let dragIdx=-1,dragOverIdx=-1;
+function handleDragStart(i,e){dragIdx=i;e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',i);requestAnimationFrame(()=>{const t=document.querySelectorAll('.slide-tab');if(t[i])t[i].classList.add('dragging');})}
+function handleDragOver(i,e){e.preventDefault();dragOverIdx=i;}
+function handleDragEnd(){if(dragIdx>=0&&dragOverIdx>=0&&dragIdx!==dragOverIdx){const item=slides.splice(dragIdx,1)[0];slides.splice(dragOverIdx,0,item);if(currentSlide===dragIdx)currentSlide=dragOverIdx;else if(currentSlide>dragIdx&&currentSlide<=dragOverIdx)currentSlide--;else if(currentSlide<dragIdx&&currentSlide>=dragOverIdx)currentSlide++;}dragIdx=-1;dragOverIdx=-1;render();}
+
+// Touch drag
+let touchDragActive=false,touchStartY=0,touchTimer=null;
+function tStart(i,e){touchStartY=e.touches[0].clientY;dragIdx=i;touchDragActive=false;touchTimer=setTimeout(()=>{touchDragActive=true;const t=document.querySelectorAll('.slide-tab');if(t[i])t[i].classList.add('dragging');if(navigator.vibrate)navigator.vibrate(30);},200);}
+function tMove(e){if(!touchDragActive){if(Math.abs(e.touches[0].clientY-touchStartY)>10&&touchTimer){clearTimeout(touchTimer);touchTimer=null;}return;}e.preventDefault();const y=e.touches[0].clientY;const tabs=document.querySelectorAll('.slide-tab');for(let j=0;j<tabs.length;j++){const r=tabs[j].getBoundingClientRect();if(y>=r.top&&y<=r.bottom){dragOverIdx=j;tabs.forEach((t,k)=>{t.style.transform=k===j&&k!==dragIdx?'translateY('+(dragIdx<j?'-4px':'4px')+')':'';});break;}}}
+function tEnd(){if(touchTimer){clearTimeout(touchTimer);touchTimer=null;}if(touchDragActive&&dragIdx>=0&&dragOverIdx>=0&&dragIdx!==dragOverIdx){const item=slides.splice(dragIdx,1)[0];slides.splice(dragOverIdx,0,item);if(currentSlide===dragIdx)currentSlide=dragOverIdx;else if(currentSlide>dragIdx&&currentSlide<=dragOverIdx)currentSlide--;else if(currentSlide<dragIdx&&currentSlide>=dragOverIdx)currentSlide++;}touchDragActive=false;dragIdx=-1;dragOverIdx=-1;document.querySelectorAll('.slide-tab').forEach(t=>t.style.transform='');render();}
+
+// ═══ RENDER ═══
+function renderSidebar(){
+  const sb=document.getElementById('sidebar');let h='';
+  slides.forEach((s,i)=>{h+=`<div class="slide-tab ${i===currentSlide?'active':''}" draggable="true" ondragstart="handleDragStart(${i},event)" ondragover="handleDragOver(${i},event)" ondragend="handleDragEnd()" onclick="selectSlide(${i})"><div class="drag-handle" ontouchstart="tStart(${i},event)" ontouchmove="tMove(event)" ontouchend="tEnd()">⠿</div><div class="num">${i+1}</div><div class="preview-text">${s.heading||'Untitled slide'}</div>${slides.length>1?`<button class="del-btn" onclick="event.stopPropagation();requestDelete(${i})">✕</button>`:''}</div>`;});
+  if(slides.length<MAX_SLIDES)h+=`<button class="add-slide-btn" onclick="addSlide()">+ Add Slide</button>`;
+  h+=`<div class="sidebar-footer"><button class="reset-btn" onclick="requestReset()">↻ New Deck</button><div class="slide-count">${slides.length} / ${MAX_SLIDES}</div></div>`;
+  sb.innerHTML=h;
+}
+
+function renderEditor(){
+  const s=slides[currentSlide];const hasImg=!!s.image;
+  const fontOpts=FONTS.map((f,i)=>`<option value="${i}" ${s.headingFont===i?'selected':''}>${f.label}</option>`).join('');
+  const fontOpts2=FONTS.map((f,i)=>`<option value="${i}" ${s.bodyFont===i?'selected':''}>${f.label}</option>`).join('');
+  document.getElementById('editor').innerHTML=`
+    <div class="editor-section"><label>Heading</label>
+      <input type="text" value="${esc(s.heading)}" oninput="updateField('heading',this.value)" placeholder="Slide title..." maxlength="80">
+      <div class="format-toolbar" style="margin-top:8px">
+        <div class="fmt-group">
+          <button class="fmt-btn bold-btn ${s.headingBold?'active':''}" onclick="toggleFmt('headingBold')">B</button>
+          <button class="fmt-btn italic-btn ${s.headingItalic?'active':''}" onclick="toggleFmt('headingItalic')">I</button>
+          <button class="fmt-btn underline-btn ${s.headingUnderline?'active':''}" onclick="toggleFmt('headingUnderline')">U</button>
+        </div>
+        <div class="fmt-group">
+          <select class="font-select" onchange="updateField('headingFont',+this.value)" style="font-family:${FONTS[s.headingFont].css}">${fontOpts}</select>
+        </div>
+        <div class="fmt-group">
+          <div class="size-options">
+            <button class="size-btn ${s.headingSize==='sm'?'active':''}" onclick="updateField('headingSize','sm')">S</button>
+            <button class="size-btn ${s.headingSize==='md'?'active':''}" onclick="updateField('headingSize','md')">M</button>
+            <button class="size-btn ${s.headingSize==='lg'?'active':''}" onclick="updateField('headingSize','lg')">L</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="editor-section"><label>Body Text</label>
+      <textarea id="bodyTextarea" oninput="updateField('body',this.value)" placeholder="Your message..." maxlength="400">${esc(s.body)}</textarea>
+      <div class="format-toolbar" style="margin-top:8px">
+        <div class="fmt-group">
+          <button class="fmt-btn bold-btn ${s.bodyBold?'active':''}" onclick="toggleFmt('bodyBold')">B</button>
+          <button class="fmt-btn italic-btn ${s.bodyItalic?'active':''}" onclick="toggleFmt('bodyItalic')">I</button>
+          <button class="fmt-btn underline-btn ${s.bodyUnderline?'active':''}" onclick="toggleFmt('bodyUnderline')">U</button>
+        </div>
+        <div class="fmt-group">
+          <select class="font-select" onchange="updateField('bodyFont',+this.value)" style="font-family:${FONTS[s.bodyFont].css}">${fontOpts2}</select>
+        </div>
+        <div class="fmt-group">
+          <div class="size-options">
+            <button class="size-btn ${s.bodySize==='sm'?'active':''}" onclick="updateField('bodySize','sm')">S</button>
+            <button class="size-btn ${s.bodySize==='md'?'active':''}" onclick="updateField('bodySize','md')">M</button>
+            <button class="size-btn ${s.bodySize==='lg'?'active':''}" onclick="updateField('bodySize','lg')">L</button>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:6px"><label style="margin-bottom:4px">Quick Symbols</label>
+        <div class="symbol-row">${SYMBOLS.map(sym=>`<button class="symbol-btn" onclick="insertSymbol('${sym}')">${sym}</button>`).join('')}</div>
+      </div>
+    </div>
+    <div class="editor-section"><label>Link <span style="text-transform:none;letter-spacing:0;font-weight:400;opacity:.7">— shown on slide so viewers can type it in</span></label><input type="url" value="${esc(s.link)}" oninput="updateField('link',this.value)" placeholder="https://yoursite.com"></div>
+    <div class="editor-section"><label>Photo</label>
+      <div class="photo-area">
+        ${hasImg?`<div class="photo-preview-box"><img src="${s.image}" alt="Photo"><button class="remove-photo-btn" onclick="removePhoto()">✕</button></div>`:''}
+        <label class="photo-upload-label"><input type="file" accept="image/*" onchange="handlePhoto(this)"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14m-7-7h14"/></svg>${hasImg?'Change Photo':'Add a Photo'}</label>
+      </div>
+      ${hasImg?`<div style="margin-top:10px"><label style="margin-bottom:6px;display:block">Photo Size</label><div class="layout-options"><div class="layout-opt ${s.imageSize==='sm'?'active':''}" onclick="updateField('imageSize','sm')">Small</div><div class="layout-opt ${s.imageSize==='md'?'active':''}" onclick="updateField('imageSize','md')">Medium</div><div class="layout-opt ${s.imageSize==='lg'?'active':''}" onclick="updateField('imageSize','lg')">Large</div></div></div>`:''}
+    </div>
+    <div class="editor-section"><label>Color Theme</label><div class="color-row">${THEMES.map((t,i)=>`<div class="color-swatch ${s.theme===i?'active':''}" style="background:${t.bg};${t.bg.startsWith('#f')||t.bg.startsWith('#e')?'box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)':''}" onclick="updateField('theme',${i})" title="${t.name}"></div>`).join('')}</div></div>
+    <div class="editor-section"><label>Slide Size</label><div class="ratio-options">${Object.entries(RATIOS).map(([k,r])=>`<div class="ratio-opt ${selectedRatio===k?'active':''}" onclick="setRatio('${k}')"><strong>${r.label}</strong>${r.desc}</div>`).join('')}</div></div>
+    <div class="editor-section"><label>Layout</label><div class="layout-options"><div class="layout-opt ${s.layout==='top'?'active':''}" onclick="updateField('layout','top')">↑ Top</div><div class="layout-opt ${s.layout==='center'?'active':''}" onclick="updateField('layout','center')">⊡ Center</div><div class="layout-opt ${s.layout==='bottom'?'active':''}" onclick="updateField('layout','bottom')">↓ Bottom</div></div></div>`;
+}
+
+function renderPreview(){
+  const s=slides[currentSlide],t=THEMES[s.theme],p=document.getElementById('preview'),r=RATIOS[selectedRatio];
+  p.className='slide-canvas '+r.cssClass;
+  if(s.layout==='top')p.classList.add('layout-top');
+  if(s.layout==='bottom')p.classList.add('layout-bottom');
+  p.style.background=t.bg;p.style.color=t.text;
+
+  const hFont=FONTS[s.headingFont]||FONTS[0];
+  const bFont=FONTS[s.bodyFont]||FONTS[0];
+  const hStyle=`color:${t.text};font-family:${hFont.css};${s.headingBold?'font-weight:700;':'font-weight:400;'}${s.headingItalic?'font-style:italic;':''}${s.headingUnderline?'text-decoration:underline;':''}`;
+  const bStyle=`color:${t.text};font-family:${bFont.css};${s.bodyBold?'font-weight:700;':'font-weight:400;'}${s.bodyItalic?'font-style:italic;':''}${s.bodyUnderline?'text-decoration:underline;':''}`;
+
+  let h='';
+  if(s.image)h+=`<img class="slide-image img-${s.imageSize||'md'}" src="${s.image}">`;
+  if(s.heading)h+=`<div class="slide-heading size-${s.headingSize}" style="${hStyle}">${esc(s.heading)}</div>`;
+  if(s.body)h+=`<div class="slide-body size-${s.bodySize}" style="${bStyle}">${esc(s.body).replace(/\n/g,'<br>')}</div>`;
+  if(s.link)h+=`<div class="slide-link-pill" style="background:${t.accent};color:${t.bg.startsWith('#f')||t.bg.startsWith('#e')?'#fff':t.text}">${esc(s.link)}</div>`;
+  h+=`<div class="slide-number" style="color:${t.text};font-family:'DM Sans',sans-serif">${currentSlide+1} / ${slides.length}</div>`;
+  h+=`<div class="branding" style="color:${t.text};font-family:'Playfair Display',serif">Carousel</div>`;
+  p.innerHTML=h;
+  document.getElementById('dots').innerHTML=slides.map((_,i)=>`<span class="${i===currentSlide?'active':''}" onclick="selectSlide(${i})"></span>`).join('');
+}
+
+function render(){renderSidebar();renderEditor();renderPreview();}
+function esc(s){const d=document.createElement('div');d.textContent=s||'';return d.innerHTML;}
+function selectSlide(i){currentSlide=i;render();}
+function addSlide(){if(slides.length>=MAX_SLIDES)return;slides.push(makeSlide());currentSlide=slides.length-1;render();}
+function updateField(f,v){slides[currentSlide][f]=v;renderPreview();renderSidebar();if(['theme','layout','headingFont','bodyFont','headingSize','bodySize','imageSize'].includes(f))renderEditor();}
+function toggleFmt(f){slides[currentSlide][f]=!slides[currentSlide][f];renderPreview();renderEditor();}
+function removePhoto(){slides[currentSlide].image=null;render();}
+function prevSlide(){if(currentSlide>0){currentSlide--;render();}}
+function nextSlide(){if(currentSlide<slides.length-1){currentSlide++;render();}}
+function setRatio(r){selectedRatio=r;render();}
+function insertSymbol(sym){const ta=document.getElementById('bodyTextarea');if(!ta)return;const start=ta.selectionStart,end=ta.selectionEnd;const val=ta.value;ta.value=val.substring(0,start)+sym+val.substring(end);ta.selectionStart=ta.selectionEnd=start+sym.length;slides[currentSlide].body=ta.value;renderPreview();ta.focus();}
+function handlePhoto(input){const file=input.files&&input.files[0];if(!file)return;const reader=new FileReader();reader.onload=function(e){slides[currentSlide].image=e.target.result;render();};reader.readAsDataURL(file);}
+
+function requestDelete(i){if(slides.length<=1)return;pendingDeleteIndex=i;document.getElementById('deleteSlideLabel').textContent='Slide '+(i+1)+(slides[i].heading?' "'+slides[i].heading.substring(0,25)+'"':'');document.getElementById('confirmDelete').classList.add('active');}
+function cancelDelete(){pendingDeleteIndex=-1;document.getElementById('confirmDelete').classList.remove('active');}
+function confirmDeleteAction(){if(pendingDeleteIndex>=0&&slides.length>1){slides.splice(pendingDeleteIndex,1);if(currentSlide>=slides.length)currentSlide=slides.length-1;render();}cancelDelete();}
+function requestReset(){document.getElementById('confirmReset').classList.add('active');}
+function cancelReset(){document.getElementById('confirmReset').classList.remove('active');}
+function confirmResetAction(){slides=[makeSlide()];currentSlide=0;render();cancelReset();document.getElementById('exportStatus').textContent='✓ Fresh deck ready!';setTimeout(()=>document.getElementById('exportStatus').textContent='',3000);}
+
+async function captureSlide(index){
+  const s=slides[index],t=THEMES[s.theme],r=RATIOS[selectedRatio];
+  const el=document.getElementById('offscreenCanvas');
+
+  // Explicit pixel sizes for export — these look good on phone screens
+  const scale = r.w / 1080; // normalize to 1080 base
+  const headingSizes = {sm: 52*scale, md: 72*scale, lg: 96*scale};
+  const bodySizes = {sm: 32*scale, md: 40*scale, lg: 52*scale};
+  const hPx = headingSizes[s.headingSize] || headingSizes.md;
+  const bPx = bodySizes[s.bodySize] || bodySizes.md;
+
+  el.setAttribute('style',`width:${r.w}px;height:${r.h}px;max-width:none;border-radius:0;aspect-ratio:auto;background:${t.bg};color:${t.text};display:flex;flex-direction:column;align-items:center;text-align:center;overflow:hidden;position:relative;`);
+
+  // Vertical alignment via padding
+  const padH = Math.round(r.h * 0.06);
+  const padW = Math.round(r.w * 0.08);
+  if(s.layout==='top') el.style.cssText += `justify-content:flex-start;padding:${padH*2}px ${padW}px ${padH}px;`;
+  else if(s.layout==='bottom') el.style.cssText += `justify-content:flex-end;padding:${padH}px ${padW}px ${padH*2}px;`;
+  else el.style.cssText += `justify-content:center;padding:${padH}px ${padW}px;`;
+
+  const hFont=FONTS[s.headingFont]||FONTS[0];
+  const bFont=FONTS[s.bodyFont]||FONTS[0];
+
+  let h='';
+  if(s.image){
+    const imgMaxH = {sm: 0.2, md: 0.4, lg: 0.65};
+    const imgPct = imgMaxH[s.imageSize] || imgMaxH.md;
+    h+=`<img src="${s.image}" style="max-width:85%;max-height:${Math.round(r.h*imgPct)}px;object-fit:contain;border-radius:${Math.round(24*scale)}px;margin-bottom:${Math.round(40*scale)}px;">`;
+  }
+
+  if(s.heading) h+=`<div style="font-family:${hFont.css};font-size:${hPx}px;line-height:1.2;color:${t.text};margin-bottom:${Math.round(24*scale)}px;word-break:break-word;max-width:95%;${s.headingBold?'font-weight:700;':'font-weight:400;'}${s.headingItalic?'font-style:italic;':''}${s.headingUnderline?'text-decoration:underline;':''}">${esc(s.heading)}</div>`;
+
+  if(s.body) h+=`<div style="font-family:${bFont.css};font-size:${bPx}px;line-height:1.55;color:${t.text};opacity:0.85;word-break:break-word;max-width:90%;${s.bodyBold?'font-weight:700;':'font-weight:400;'}${s.bodyItalic?'font-style:italic;':''}${s.bodyUnderline?'text-decoration:underline;':''}">${esc(s.body).replace(/\n/g,'<br>')}</div>`;
+
+  if(s.link) h+=`<div style="margin-top:${Math.round(36*scale)}px;padding:${Math.round(18*scale)}px ${Math.round(40*scale)}px;background:${t.accent};color:${t.bg.startsWith('#f')||t.bg.startsWith('#e')?'#fff':t.text};border-radius:${Math.round(50*scale)}px;font-family:'DM Sans',sans-serif;font-size:${Math.round(28*scale)}px;font-weight:700;word-break:break-all;max-width:85%;">${esc(s.link)}</div>`;
+
+  h+=`<div style="position:absolute;bottom:${Math.round(28*scale)}px;right:${Math.round(36*scale)}px;font-size:${Math.round(22*scale)}px;opacity:0.4;font-family:'DM Sans',sans-serif;color:${t.text}">${index+1} / ${slides.length}</div>`;
+  h+=`<div style="position:absolute;bottom:${Math.round(28*scale)}px;left:${Math.round(36*scale)}px;font-size:${Math.round(18*scale)}px;opacity:0.25;font-family:'Playfair Display',serif;letter-spacing:2px;color:${t.text}">Carousel</div>`;
+  el.innerHTML=h;
+
+  const imgs=el.querySelectorAll('img');
+  await Promise.all(Array.from(imgs).map(img=>img.complete?Promise.resolve():new Promise(res=>{img.onload=res;img.onerror=res;})));
+  await new Promise(re=>setTimeout(re,200));
+
+  const canvas=await html2canvas(el,{width:r.w,height:r.h,scale:1,backgroundColor:null,useCORS:true,logging:false});
+  return new Promise((resolve,reject)=>{
+    canvas.toBlob(blob=>{
+      if(blob)resolve(blob);
+      else reject(new Error('Failed to create image blob'));
+    },'image/png');
+  });
+}
+async function exportImages(){
+  const btn=document.getElementById('exportBtn'),status=document.getElementById('exportStatus'),btnText=document.getElementById('exportBtnText');
+  btn.disabled=true;btnText.innerHTML='<span class="btn-spinner"></span> Generating...';status.textContent='';
+
+  // Open modal
+  document.getElementById('saveModal').classList.add('active');
+  document.body.style.overflow='hidden';
+  const container=document.getElementById('modalImages');
+  container.innerHTML='<div class="generating-msg"><div class="spinner"></div>Generating '+slides.length+' slide'+(slides.length>1?'s':'')+'...</div>';
+
+  const isMobile=/iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const canShare=navigator.share&&navigator.canShare;
+  const hint=document.getElementById('modalHint');
+  if(isMobile){
+    hint.innerHTML='<strong>📱 Tap "Save"</strong> on each slide to save to your camera roll, or <strong>"Share"</strong> to send directly to any app.';
+  } else {
+    hint.innerHTML='<strong>💻 Right-click</strong> any image → <strong>Save Image As</strong>, or use the save buttons below each slide.';
+  }
+
+  const blobs=[];
+  try{
+    for(let i=0;i<slides.length;i++){
+      const blob=await captureSlide(i);
+      blobs.push({index:i,blob,url:URL.createObjectURL(blob)});
+      await new Promise(r=>setTimeout(r,150));
+    }
+  }catch(e){
+    console.error(e);
+    container.innerHTML='<div class="generating-msg">Something went wrong. Close and try again.</div>';
+    btn.disabled=false;btnText.textContent='📱 Save Slides';
+    return;
+  }
+
+  // Render slides in modal
+  let html='';
+  blobs.forEach((b,idx)=>{
+    html+=`<div class="slide-export-card">
+      <img src="${b.url}" alt="Slide ${b.index+1}">
+      <div class="card-actions">
+        <button class="card-save-btn" onclick="saveSlide(${idx})">⬇ Save</button>
+        ${canShare?`<button class="card-share-btn" onclick="shareSlide(${idx})">↗ Share</button>`:''}
+      </div>
+    </div>`;
+  });
+  container.innerHTML=html;
+
+  // Store blobs for save/share actions
+  window._exportedSlides=blobs;
+
+  // Modal actions
+  const actions=document.getElementById('modalActions');
+  let actHtml='';
+  if(canShare&&blobs.length>1){
+    actHtml+=`<button class="modal-saveall-btn" onclick="shareAll()">↗ Share All ${blobs.length} Slides</button>`;
+  }
+  actHtml+=`<button class="modal-done-btn" onclick="closeModal()">Done</button>`;
+  actions.innerHTML=actHtml;
+
+  btn.disabled=false;btnText.textContent='📱 Save Slides';
+  status.textContent='';
+}
+
+function saveSlide(idx){
+  const b=window._exportedSlides[idx];
+  if(!b)return;
+  const a=document.createElement('a');a.href=b.url;a.download=`carousel-slide-${String(b.index+1).padStart(2,'0')}.png`;
+  a.style.display='none';document.body.appendChild(a);a.click();document.body.removeChild(a);
+}
+
+async function shareSlide(idx){
+  const b=window._exportedSlides[idx];
+  if(!b)return;
+  try{
+    const file=new File([b.blob],`carousel-slide-${String(b.index+1).padStart(2,'0')}.png`,{type:'image/png'});
+    if(navigator.canShare&&navigator.canShare({files:[file]})){
+      await navigator.share({files:[file]});
+    } else {
+      saveSlide(idx);
+    }
+  }catch(e){
+    if(e.name!=='AbortError') saveSlide(idx);
+  }
+}
+
+async function shareAll(){
+  const blobs=window._exportedSlides;
+  if(!blobs||!blobs.length)return;
+  try{
+    const files=blobs.map(b=>new File([b.blob],`carousel-slide-${String(b.index+1).padStart(2,'0')}.png`,{type:'image/png'}));
+    if(navigator.canShare&&navigator.canShare({files})){
+      await navigator.share({files,title:'My Carousel',text:'Check out my carousel!'});
+    }
+  }catch(e){
+    if(e.name!=='AbortError') console.log('Share cancelled or failed');
+  }
+}
+
+} // end if(!viewSlug&&!viewData) — builder-only code above
+
+// ═══ SHARE AS LINK (URL-encoded, no backend needed) ═══
+
+function compressDeck(){
+  const deckData={
+    s:slides.map(s=>({
+      h:s.heading||'',b:s.body||'',l:s.link||'',
+      t:s.theme||0,la:s.layout||'center',
+      hb:s.headingBold?1:0,hi:s.headingItalic?1:0,hu:s.headingUnderline?1:0,
+      bb:s.bodyBold?1:0,bi:s.bodyItalic?1:0,bu:s.bodyUnderline?1:0,
+      hf:s.headingFont||0,bf:s.bodyFont||0,
+      hs:s.headingSize||'md',bs:s.bodySize||'md',
+      is:s.imageSize||'md',
+    })),
+    r:selectedRatio,
+  };
+  // Remove defaults to save space
+  deckData.s.forEach(s=>{
+    if(s.la==='center')delete s.la;
+    if(!s.l)delete s.l;
+    if(!s.t)delete s.t;
+    if(!s.hb)delete s.hb;if(!s.hi)delete s.hi;if(!s.hu)delete s.hu;
+    if(!s.bb)delete s.bb;if(!s.bi)delete s.bi;if(!s.bu)delete s.bu;
+    if(!s.hf)delete s.hf;if(!s.bf)delete s.bf;
+    if(s.hs==='md')delete s.hs;if(s.bs==='md')delete s.bs;
+    if(s.is==='md')delete s.is;
+  });
+  if(deckData.r==='portrait')delete deckData.r;
+  const b64=btoa(unescape(encodeURIComponent(JSON.stringify(deckData))));
+  // Make URL-safe: replace + with -, / with _, remove = padding
+  return b64.replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+}
+
+async function shareDeck(){
+  document.getElementById('shareLinkModal').classList.add('active');
+  document.body.style.overflow='hidden';
+  document.getElementById('shareLinkBody').style.display='';
+  document.getElementById('shareLinkResult').style.display='none';
+  document.getElementById('slugError').style.display='none';
+  // Pre-fill slug from heading
+  var heading=slides[0].heading||'';
+  document.getElementById('slugInput').value=heading.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').substring(0,40);
+}
+
+async function publishDeck(){
+  var btn=document.getElementById('publishBtn');
+  var btnText=document.getElementById('publishBtnText');
+  var err=document.getElementById('slugError');
+  err.style.display='none';
+
+  var slug=document.getElementById('slugInput').value.trim().replace(/^-|-$/g,'');
+  if(!slug){
+    var c='abcdefghijklmnopqrstuvwxyz0123456789';
+    slug='';for(var i=0;i<8;i++)slug+=c[Math.floor(Math.random()*c.length)];
+  }
+  if(slug.length<2){err.textContent='Name must be at least 2 characters.';err.style.display='block';return;}
+
+  btn.disabled=true;
+  btnText.innerHTML='<span class="btn-spinner"></span> Publishing...';
+
+  try{
+    var deckData={
+      slides:slides.map(function(s){return{
+        heading:s.heading||'',body:s.body||'',link:s.link||'',image:s.image||null,
+        theme:s.theme||0,layout:s.layout||'center',
+        headingBold:!!s.headingBold,headingItalic:!!s.headingItalic,headingUnderline:!!s.headingUnderline,
+        bodyBold:!!s.bodyBold,bodyItalic:!!s.bodyItalic,bodyUnderline:!!s.bodyUnderline,
+        headingFont:s.headingFont||0,bodyFont:s.bodyFont||0,
+        headingSize:s.headingSize||'md',bodySize:s.bodySize||'md',
+        imageSize:s.imageSize||'md',
+      };}),
+      ratio:selectedRatio,
+      createdAt:Date.now(),
+    };
+
+    var r=await fetch('/api/deck',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({slug:slug,data:deckData})
+    });
+    var result=await r.json();
+
+    if(r.status===409){
+      err.textContent='That name is taken! Try another.';err.style.display='block';
+      btn.disabled=false;btnText.textContent='🔗 Publish & Get Link';return;
+    }
+    if(!r.ok) throw new Error(result.error||'Publish failed');
+
+    window._lastShareUrl='https://makeacarousel.com/?v='+slug;
+    document.getElementById('generatedLink').textContent=window._lastShareUrl;
+    document.getElementById('shareLinkBody').style.display='none';
+    document.getElementById('shareLinkResult').style.display='';
+  }catch(e){
+    console.error('Publish error:',e);
+    err.textContent='Error: '+e.message;err.style.display='block';
+  }
+  btn.disabled=false;btnText.textContent='🔗 Publish & Get Link';
+}
+
+function copyShareLink(){
+  const url=window._lastShareUrl;if(!url)return;
+  navigator.clipboard.writeText(url).then(()=>{
+    document.getElementById('copyBtnText').textContent='✓ Copied!';
+    setTimeout(()=>document.getElementById('copyBtnText').textContent='📋 Copy Link',2000);
+  }).catch(()=>{
+    const ta=document.createElement('textarea');ta.value=url;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);
+    document.getElementById('copyBtnText').textContent='✓ Copied!';
+    setTimeout(()=>document.getElementById('copyBtnText').textContent='📋 Copy Link',2000);
+  });
+}
+
+async function nativeShareLink(){
+  const url=window._lastShareUrl;if(!url)return;
+  if(navigator.share){try{await navigator.share({title:'Check out my carousel!',url});}catch(e){}}
+  else copyShareLink();
+}
+
+function closeShareModal(){
+  document.getElementById('shareLinkModal').classList.remove('active');
+  document.body.style.overflow='';
+}
+
+function closeModal(){
+  document.getElementById('saveModal').classList.remove('active');
+  document.body.style.overflow='';
+  if(window._exportedSlides){
+    setTimeout(()=>{
+      window._exportedSlides.forEach(b=>URL.revokeObjectURL(b.url));
+      window._exportedSlides=null;
+    },2000);
+  }
+}
+
+// Builder-only event listeners
+if(!viewSlug&&!viewData){
+  document.addEventListener('keydown',e=>{if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;if(e.key==='ArrowLeft')prevSlide();if(e.key==='ArrowRight')nextSlide();if(e.key==='Escape'){closeModal();closeShareModal();cancelDelete();cancelReset();}});
+  document.getElementById('saveModal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+  document.getElementById('shareLinkModal').addEventListener('click',function(e){if(e.target===this)closeShareModal();});
+  let touchX=0;const prev=document.getElementById('preview');
+  prev.addEventListener('touchstart',e=>{touchX=e.touches[0].clientX;},{passive:true});
+  prev.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-touchX;if(Math.abs(d)>50){d<0?nextSlide():prevSlide();}},{passive:true});
+  render();
+}
+</script>
+</body>
+</html>
